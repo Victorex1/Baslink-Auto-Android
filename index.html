@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Launchpad — Fully Responsive</title>
+
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/oo.png" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-gray-900 text-gray-100 font-sans antialiased selection:bg-indigo-500 selection:text-white"
+  >
+    <!-- NAVIGATION BAR -->
+    <header
+      class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
+      >
+        <!-- Brand Logo -->
+        <a
+          href="#home"
+          class="flex items-center gap-2 text-xl font-bold tracking-wide text-white"
+        >
+          <span class="p-2 bg-indigo-600 rounded-lg text-white"
+            ><i class="fa-solid fa-bolt"></i
+          ></span>
+          Baslink<span class="text-indigo-500">Auto</span>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav
+          class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300"
+        >
+          <a href="#home" class="hover:text-indigo-400 transition-colors"
+            >Home</a
+          >
+          <a href="#products" class="hover:text-indigo-400 transition-colors"
+            >Products</a
+          >
+          <a href="#about" class="hover:text-indigo-400 transition-colors"
+            >About</a
+          >
+          <a href="#contact" class="hover:text-indigo-400 transition-colors"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:block">
+          <a
+            href="#products"
+            class="px-5 py-2.5 text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/30 transition-all"
+          >
+            Explore Inventory
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="flex md:hidden">
+          <button
+            id="menu-btn"
+            type="button"
+            class="text-gray-300 hover:text-white focus:outline-none p-2 rounded-lg bg-gray-800 border border-gray-700"
+          >
+            <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-950 border-b border-gray-800 px-4 pt-4 pb-6 space-y-3"
+      >
+        <a
+          href="#home"
+          class="mobile-link block py-2 px-3 text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-indigo-400 rounded-md"
+          >Home</a
+        >
+        <a
+          href="#products"
+          class="mobile-link block py-2 px-3 text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-indigo-400 rounded-md"
+          >Products</a
+        >
+        <a
+          href="#about"
+          class="mobile-link block py-2 px-3 text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-indigo-400 rounded-md"
+          >About</a
+        >
+        <a
+          href="#contact"
+          class="mobile-link block py-2 px-3 text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-indigo-400 rounded-md"
+          >Contact</a
+        >
+        <a
+          href="#products"
+          class="mobile-link block w-full text-center mt-4 px-5 py-3 text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/30"
+        >
+          Explore Inventory
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION (#home) -->
+    <section
+      id="home"
+      class="relative py-16 sm:py-24 lg:py-32 overflow-hidden border-b border-gray-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10"
+      >
+        <span
+          class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/60 border border-indigo-800/50 rounded-full mb-6"
+        >
+          <i class="fa-solid fa-sparkles"></i> Next-Gen Auto Experience
+        </span>
+        <h1
+          class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight"
+        >
+          Drive into the future with ultimate precision & style.
+        </h1>
+        <p
+          class="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto"
+        >
+          Explore our curated fleet of premium performance vehicles and
+          innovative smart management platforms.
+        </p>
+        <div
+          class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a
+            href="#products"
+            class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-semibold text-white shadow-lg shadow-indigo-600/30 transition-all text-center"
+          >
+            Browse Featured Cars
+          </a>
+          <a
+            href="#contact"
+            class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-gray-800 hover:bg-gray-700 font-semibold text-gray-200 border border-gray-700 transition-all text-center"
+          >
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION (#products) -->
+    <section
+      id="products"
+      class="py-16 sm:py-20 bg-gray-950 border-b border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+          <h2
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white"
+          >
+            Featured Fleet & Services
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-gray-400">
+            Select from top-rated automotive builds configured for high
+            reliability.
+          </p>
+        </div>
+
+<!-- Products Container -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
+
+  <!-- Card 1 -->
+  <div class="w-full bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition-all duration-300 shadow-lg group flex flex-col">
+    <div class="bg-gray-800 flex items-center justify-center text-gray-600 overflow-hidden h-48">
+      <img class="object-contain h-full w-3/5 group-hover:scale-110 transition-transform duration-300" src="./img/5Core Coaxial Car Door Speakers 6” 4Pcs 500W 4Ohm 2 Way Component Subw - 5 Core.png" alt="5Core Coaxial Car Door Speakers">
+    </div>
+    <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">5Core Coaxial Car Door Speakers</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white mt-1">6” 4Pcs 500W 4Ohm 2 Way Component Subw - 5 Core</h3>
+        <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
+          High-performance coaxial speakers engineered for clear highs and deep mid-bass response.<br />
+          Durable design build for long-lasting vehicle audio upgrades.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-800 flex items-center justify-between gap-3">
+        <div class="flex items-center border border-gray-700 bg-gray-800 rounded-lg overflow-hidden">
+          <button type="button" class="minus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-minus text-xs"></i>
+          </button>
+          <input type="number" value="1" min="1" max="99" class="qty-input w-10 text-center bg-transparent text-white text-xs sm:text-sm font-semibold focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+          <button type="button" class="plus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </button>
+        </div>
+        <a href="#contact" class="flex-1 text-center px-3.5 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope text-xs pointer-events-none"></i>
+          <span class="pointer-events-none">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="w-full bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition-all duration-300 shadow-lg group flex flex-col">
+    <div class="bg-gray-800 flex items-center justify-center text-gray-600 overflow-hidden h-48">
+      <img class="object-contain h-full w-3/5 group-hover:scale-110 transition-transform duration-300" src="./img/Active Underseat Subwoofer.png" alt="Active Underseat Subwoofer">
+    </div>
+    <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Active Underseat Subwoofer</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white mt-1">Compact Powered Subwoofer System</h3>
+        <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
+          Compact active subwoofer designed to slide under passenger seats seamlessly.<br />
+          Delivers powerful bass amplification without taking up trunk space.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-800 flex items-center justify-between gap-3">
+        <div class="flex items-center border border-gray-700 bg-gray-800 rounded-lg overflow-hidden">
+          <button type="button" class="minus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-minus text-xs"></i>
+          </button>
+          <input type="number" value="1" min="1" max="99" class="qty-input w-10 text-center bg-transparent text-white text-xs sm:text-sm font-semibold focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+          <button type="button" class="plus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </button>
+        </div>
+        <a href="#contact" class="flex-1 text-center px-3.5 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope text-xs pointer-events-none"></i>
+          <span class="pointer-events-none">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="w-full bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition-all duration-300 shadow-lg group flex flex-col">
+    <div class="bg-gray-800 flex items-center justify-center text-gray-600 overflow-hidden h-48">
+      <img class="object-contain h-full w-3/5 group-hover:scale-110 transition-transform duration-300" src="./img/JBL BassPro Nano Ultra-Compact Underseat Powered Subwoofer.png" alt="JBL BassPro Nano">
+    </div>
+    <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">JBL BassPro Nano</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white mt-1">Active Underseat Subwoofer</h3>
+        <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
+          Ultra-compact active subwoofer providing deep punchy bass in tight spaces.<br />
+          Rugged die-cast aluminum enclosure for durability and heat dissipation.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-800 flex items-center justify-between gap-3">
+        <div class="flex items-center border border-gray-700 bg-gray-800 rounded-lg overflow-hidden">
+          <button type="button" class="minus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-minus text-xs"></i>
+          </button>
+          <input type="number" value="1" min="1" max="99" class="qty-input w-10 text-center bg-transparent text-white text-xs sm:text-sm font-semibold focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+          <button type="button" class="plus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </button>
+        </div>
+        <a href="#contact" class="flex-1 text-center px-3.5 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope text-xs pointer-events-none"></i>
+          <span class="pointer-events-none">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="w-full bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition-all duration-300 shadow-lg group flex flex-col">
+    <div class="bg-gray-800 flex items-center justify-center text-gray-600 overflow-hidden h-48">
+      <img class="object-contain h-full w-3/5 group-hover:scale-110 transition-transform duration-300" src="./img/Alondy Single Din Car Stereo with CD DVD Player Bluetooth USB RDS_FM_AM Radio MP3 SD AUX Audio Receiver.png" alt="Alondy Single Din Player">
+    </div>
+    <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Alondy Single Din</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white mt-1">Car Stereo CD/DVD Player</h3>
+        <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
+          Versatile head unit featuring physical CD/DVD media playability and radio tuning.<br />
+          Includes Bluetooth playback and hands-free calling support.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-800 flex items-center justify-between gap-3">
+        <div class="flex items-center border border-gray-700 bg-gray-800 rounded-lg overflow-hidden">
+          <button type="button" class="minus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-minus text-xs"></i>
+          </button>
+          <input type="number" value="1" min="1" max="99" class="qty-input w-10 text-center bg-transparent text-white text-xs sm:text-sm font-semibold focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+          <button type="button" class="plus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </button>
+        </div>
+        <a href="#contact" class="flex-1 text-center px-3.5 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope text-xs pointer-events-none"></i>
+          <span class="pointer-events-none">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="w-full bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition-all duration-300 shadow-lg group flex flex-col">
+    <div class="bg-gray-800 flex items-center justify-center text-gray-600 overflow-hidden h-48">
+      <img class="object-contain h-full w-3/5 group-hover:scale-110 transition-transform duration-300" src="./img/Diamond Mirror 9.7-inch Dual Knobs Android.png" alt="Diamond Mirror 9.7 Inch Player">
+    </div>
+    <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Diamond Mirror</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white mt-1">9.7 Inch Dual Knob Android Player</h3>
+        <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
+          Sleek vertical screen display with physical control knobs for quick volume adjustments.<br />
+          Runs on Android with app store access, navigation, and media streaming.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-800 flex items-center justify-between gap-3">
+        <div class="flex items-center border border-gray-700 bg-gray-800 rounded-lg overflow-hidden">
+          <button type="button" class="minus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-minus text-xs"></i>
+          </button>
+          <input type="number" value="1" min="1" max="99" class="qty-input w-10 text-center bg-transparent text-white text-xs sm:text-sm font-semibold focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+          <button type="button" class="plus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </button>
+        </div>
+        <a href="#contact" class="flex-1 text-center px-3.5 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope text-xs pointer-events-none"></i>
+          <span class="pointer-events-none">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="w-full bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition-all duration-300 shadow-lg group flex flex-col">
+    <div class="bg-gray-800 flex items-center justify-center text-gray-600 overflow-hidden h-48">
+      <img class="object-contain h-full w-3/5 group-hover:scale-110 transition-transform duration-300" src="./img/2 Din 9_5 Inch Touch-Screen MP5 Player Car Stereo FM Radio For Apple_Android Carplay Mirror Lin O06.png" alt="Diamond Mirror 10.1 Inch Player">
+    </div>
+    <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Diamond Mirror</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white mt-1">10.1 Inch Dual Knob Android Player</h3>
+        <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
+          Large widescreen multimedia display providing vivid visuals for video and maps.<br />
+          Dual rotary knobs offer tactical control for audio and menu navigation.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-800 flex items-center justify-between gap-3">
+        <div class="flex items-center border border-gray-700 bg-gray-800 rounded-lg overflow-hidden">
+          <button type="button" class="minus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-minus text-xs"></i>
+          </button>
+          <input type="number" value="1" min="1" max="99" class="qty-input w-10 text-center bg-transparent text-white text-xs sm:text-sm font-semibold focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+          <button type="button" class="plus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </button>
+        </div>
+        <a href="#contact" class="flex-1 text-center px-3.5 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope text-xs pointer-events-none"></i>
+          <span class="pointer-events-none">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="w-full bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition-all duration-300 shadow-lg group flex flex-col">
+    <div class="bg-gray-800 flex items-center justify-center text-gray-600 overflow-hidden h-48">
+      <img class="object-contain h-full w-3/5 group-hover:scale-110 transition-transform duration-300" src="./img/dual screen.webp" alt="DriveOne Dual Screen Player">
+    </div>
+    <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">DriveOne</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white mt-1">Dual Screen Android Multimedia Player</h3>
+        <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
+          Innovatively styled dual-screen system designed for enhanced multitasking.<br />
+          Keep navigation open on one screen while managing media on the other.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-800 flex items-center justify-between gap-3">
+        <div class="flex items-center border border-gray-700 bg-gray-800 rounded-lg overflow-hidden">
+          <button type="button" class="minus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-minus text-xs"></i>
+          </button>
+          <input type="number" value="1" min="1" max="99" class="qty-input w-10 text-center bg-transparent text-white text-xs sm:text-sm font-semibold focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+          <button type="button" class="plus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </button>
+        </div>
+        <a href="#contact" class="flex-1 text-center px-3.5 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope text-xs pointer-events-none"></i>
+          <span class="pointer-events-none">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="w-full bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition-all duration-300 shadow-lg group flex flex-col">
+    <div class="bg-gray-800 flex items-center justify-center text-gray-600 overflow-hidden h-48">
+      <img class="object-contain h-full w-3/5 group-hover:scale-110 transition-transform duration-300" src="./img/car-camera.png" alt="3-in-1 Rearview Camera Unit">
+    </div>
+    <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Safety & Parking</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white mt-1">3-in-1 Waterproof Rearview Camera & Sensor</h3>
+        <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
+          Combines a wide-angle HD camera with integrated distance radar sensors.<br />
+          Waterproof casing ensures reliable performance during all weather conditions.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-800 flex items-center justify-between gap-3">
+        <div class="flex items-center border border-gray-700 bg-gray-800 rounded-lg overflow-hidden">
+          <button type="button" class="minus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-minus text-xs"></i>
+          </button>
+          <input type="number" value="1" min="1" max="99" class="qty-input w-10 text-center bg-transparent text-white text-xs sm:text-sm font-semibold focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+          <button type="button" class="plus-btn px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </button>
+        </div>
+        <a href="#contact" class="flex-1 text-center px-3.5 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope text-xs pointer-events-none"></i>
+          <span class="pointer-events-none">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (#about) -->
+    <section id="about" class="py-16 sm:py-20 bg-gray-900 border-b border-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/60 border border-indigo-800/50 px-3 py-1 rounded-full">
+              Who We Are
+            </span>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mt-4">
+              Pioneering modern automotive excellence and innovation.
+            </h2>
+            <p class="mt-4 text-gray-400 text-sm sm:text-base leading-relaxed">
+              At BaslinkAuto, we bridge the gap between high-performance automotive craftsmanship and next-generation mobility solutions. Dedicated to transparency, quality engineering, and client satisfaction, our curated inventory delivers uncompromised reliability.
+            </p>
+            <div class="mt-8 grid grid-cols-2 gap-6">
+              <div class="p-4 bg-gray-950 border border-gray-800 rounded-xl">
+                <h3 class="text-2xl font-extrabold text-indigo-500">100%</h3>
+                <p class="text-xs sm:text-sm text-gray-400 mt-1">Inspected Android</p>
+              </div>
+              <div class="p-4 bg-gray-950 border border-gray-800 rounded-xl">
+                <h3 class="text-2xl font-extrabold text-indigo-500">24/7</h3>
+                <p class="text-xs sm:text-sm text-gray-400 mt-1">Dedicated Support</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8 flex flex-col justify-center items-center text-center">
+            <div class="w-16 h-16 rounded-2xl bg-indigo-600/10 border border-indigo-600/20 text-indigo-400 flex items-center justify-center text-2xl mb-4">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Our Promise</h3>
+            <p class="text-sm text-gray-400 leading-relaxed max-w-sm">
+              We ensure every Android in our showroom undergoes comprehensive structural and diagnostic testing before meeting our customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (#contact) -->
+    <section id="contact" class="py-16 sm:py-20 bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center"
+        >
+          <!-- Contact Info -->
+          <div>
+            <h2
+              class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white"
+            >
+              Let's start a conversation
+            </h2>
+            <p class="mt-4 text-gray-400 text-sm sm:text-base leading-relaxed">
+              Have questions about pricing, customized vehicle builds, or
+              scheduling a test drive? Reach out to us directly.
+            </p>
+
+            <div class="mt-8 space-y-5">
+              <div class="flex items-start gap-4">
+                <div
+                  class="p-3 bg-indigo-600/10 border border-indigo-600/20 text-indigo-400 rounded-lg shrink-0"
+                >
+                  <i class="fa-solid fa-location-dot text-lg"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-semibold text-sm sm:text-base">
+                    Head Office
+                  </h4>
+                  <p class="text-gray-400 text-xs sm:text-sm">
+                    Zone A 12A, Shop 22 Aspmda Plaza Int'l trade fair complex badagry Express Way, Lagos
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div
+                  class="p-3 bg-indigo-600/10 border border-indigo-600/20 text-indigo-400 rounded-lg shrink-0"
+                >
+                  <i class="fa-solid fa-phone text-lg"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-semibold text-sm sm:text-base">
+                    Call Direct
+                  </h4>
+                  <p class="text-gray-400 text-xs sm:text-sm">
+                    +2348125754371
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div
+            class="bg-gray-950 p-6 sm:p-8 rounded-2xl border border-gray-800 shadow-xl"
+          >
+            <form id='form' class="space-y-5">
+              <div>
+                <label
+                  for="name"
+                  class="block text-xs sm:text-sm font-medium text-gray-300"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="mt-2 w-full rounded-lg bg-gray-900 border border-gray-800 px-4 py-3 text-white text-sm placeholder-gray-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-all"
+                  placeholder="John Doe"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-xs sm:text-sm font-medium text-gray-300"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="mt-2 w-full rounded-lg bg-gray-900 border border-gray-800 px-4 py-3 text-white text-sm placeholder-gray-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-all"
+                  placeholder="Tell us what you're looking for..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit" id='subbtn'
+                class="w-full py-3 sm:py-3.5 px-6 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-semibold text-white shadow-lg shadow-indigo-600/30 transition-all text-sm sm:text-base"
+              >
+                Send Message
+              </button>
+              <div id="worrning" class="hidden"><p class="text-red-700 border rounded-xl p-3 text-sm border-red-700">ALL FIELDS ARE REQUIRED</p></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-6 sm:py-8">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-gray-500"
+      >
+        <p>&copy; BaslinkAuto All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-gray-300 transition-colors"
+            >Privacy Policy</a
+          >
+          <a href="#" class="hover:text-gray-300 transition-colors"
+            >Terms of Service</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- MOBILE MENU TOGGLE SCRIPT -->
+    <script src="json.js"></script>
+  </body>
+</html>
