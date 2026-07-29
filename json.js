@@ -78,16 +78,18 @@ mobileLinks.forEach((link) => {
         // Prefill the contact form message textarea
         const message = `Hello, I am interested in inquiring about ${quantity} unit(s) of the ${productName}.`;
 
-        const whatsappURL = `http://wa.me/9027674464?text=${message}`;
+        const whatsappURL = `http://wa.me/8125754371?text=${message}`;
 
         window.open(whatsappURL, "_blank").focus();
       }
     });
   });
+
+  
 formBtn.addEventListener('click', () => {
    if(formName.value !== '' && formMessahe.value !== ''){
 
-      const whatsappURL = `http://wa.me/9027674464?text=Good Day, I am ${formName.value},%0A${formMessahe.value}`;
+      const whatsappURL = `http://wa.me/8125754371?text=Good Day, I am ${formName.value},%0A${formMessahe.value}`;
 
         window.open(whatsappURL, "_blank").focus();
 
