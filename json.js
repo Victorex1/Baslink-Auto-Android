@@ -76,7 +76,7 @@ mobileLinks.forEach((link) => {
         const quantity = e.target.parentElement.children[0].children[1].value || 1;
 
         // Prefill the contact form message textarea
-        const message = `Hello, I am interested in inquiring about ${quantity} unit(s) of the ${productName}.`;
+        const message = `Hello, I am interested in Inquiring about ${quantity}pcs(s) of the ${productName}.`;
 
         const whatsappURL = `http://wa.me/8125754371?text=${message}`;
 
@@ -85,7 +85,7 @@ mobileLinks.forEach((link) => {
     });
   });
 
-  
+
 formBtn.addEventListener('click', () => {
    if(formName.value !== '' && formMessahe.value !== ''){
 
