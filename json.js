@@ -81,6 +81,8 @@ mobileLinks.forEach((link) => {
         const whatsappURL = `http://wa.me/8125754371?text=${message}`;
 
         window.open(whatsappURL, "_blank").focus();
+
+        message = ''
       }
     });
   });
